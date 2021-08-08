@@ -1,0 +1,17 @@
+@import '../utils/variables';
+
+@mixin button-primary{
+    background-color: $color-purple-primary;
+    color: $color-white;
+    border-radius: 50px;
+    font-size: 'Hind Madurai', sans-serif;
+    font-weight: normal;
+}
+
+@mixin button-secondary{
+    background-color: $color-purple-secondary;
+    color: $color-purple-text;
+    border-radius: 50px;
+    font-size: 'Hind Madurai', sans-serif;
+    font-weight: normal;
+}

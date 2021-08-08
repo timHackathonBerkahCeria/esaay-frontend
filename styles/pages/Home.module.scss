@@ -1,0 +1,55 @@
+@import '../utils/variables';
+@import '../components/buttons';
+
+.home{
+  overflow: hidden;
+  max-height: 100vh;
+}
+.navBar{
+  background-color: white !important;
+  padding: 0 96px !important;
+}
+
+.logo{
+  font: bold 96px 'Comfortaa', cursive;
+  color: $color-purple !important;
+}
+
+.login{
+  font: normal 24px 'Hind Madurai', sans-serif;
+  color: $color-black !important;
+}
+
+.landingText{
+  padding-left: 96px;
+  padding-top: 10%;
+
+  & > h1{
+    font: normal 80px 'Comfortaa', cursive;
+    color: $color-purple-dark;
+
+    & > span{
+      font-weight: bold;
+    }
+  }
+
+  & > p{
+    font: normal 50px 'Hind Madurai', sans-serif;
+    color: $color-purple-second;
+    margin-top: 34px;
+  } 
+
+  & > button{
+    @include button-primary;
+    padding: 10px 50px;
+    font-size: 40px;
+    margin-top: 20px
+  }
+}
+
+.landingImg{
+  width: 800px !important;
+  height: 600px !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+}
