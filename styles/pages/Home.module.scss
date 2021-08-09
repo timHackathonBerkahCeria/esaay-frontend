@@ -11,12 +11,12 @@
 }
 
 .logo{
-  font: bold 80px 'Comfortaa', cursive;
+  font: bold 70px 'Comfortaa', cursive;
   color: $color-purple !important;
 }
 
 .login{
-  font: normal 24px 'Hind Madurai', sans-serif;
+  font: normal 20px 'Hind Madurai', sans-serif;
   color: $color-black !important;
 }
 
@@ -25,7 +25,7 @@
   padding-top: 10%;
 
   & > h1{
-    font: normal 70px 'Comfortaa', cursive;
+    font: normal 60px 'Comfortaa', cursive;
     color: $color-purple-dark;
 
     & > span{
@@ -34,7 +34,7 @@
   }
 
   & > p{
-    font: normal 40px 'Hind Madurai', sans-serif;
+    font: normal 30px 'Hind Madurai', sans-serif;
     color: $color-purple-second;
     margin-top: 34px;
   } 
@@ -42,7 +42,7 @@
   & > button{
     @include button-primary;
     padding: 10px 50px;
-    font-size: 35px;
+    font-size: 30px;
     margin-top: 20px
   }
 }
