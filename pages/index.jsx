@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <div className={styles.home}>
       <Head>
-        <title>Create Next App</title>
+        <title>Exaam | Take exams and get quick results.</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
