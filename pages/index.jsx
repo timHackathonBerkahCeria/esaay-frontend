@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/pages/Home.module.scss'
+import { useState } from 'react'
 import Image from 'next/image'
 import { 
   Navbar, 
@@ -8,8 +9,12 @@ import {
   Row
 } from 'react-bootstrap'
 import landingImg from '../public/student.png'
+import LoginPopup from '../components/LoginPopup'
 
 export default function Home() {
+
+  const [showLoginPopup, setShowLoginPopup] = useState(false)
+
   return (
     <div className={styles.home}>
       <Head>
@@ -22,7 +27,7 @@ export default function Home() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Nav.Link className={styles.login} href="#home">Login/Sign Up</Nav.Link>
+              <Nav.Link className={styles.login} onClick={() => setShowLoginPopup(true)}>Login/Sign Up</Nav.Link>
             </Nav>
           </Navbar.Collapse>
       </Navbar>
@@ -32,7 +37,7 @@ export default function Home() {
           <Col className={styles.landingText}>
             <h1>Welcome to <span>exaam</span></h1>
             <p>Take and correct exams quickly.</p>
-            <button>Get Started</button>
+            <button onClick={() => setShowLoginPopup(true)}>Get Started</button>
           </Col>
           <Col>
             <Image 
@@ -41,10 +46,10 @@ export default function Home() {
             />
           </Col>
         </Row>
-
       </main>
-
-
+      {showLoginPopup && 
+        <LoginPopup />
+      }
     </div>
   )
 }

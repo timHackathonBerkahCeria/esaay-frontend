@@ -1,0 +1,35 @@
+@import '../utils/variables';
+
+.loginPopup{
+    &_container{
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba($color-black,  0.5);
+        z-index: 10;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+
+    &_content{
+        background-color: $color-purple-light;
+        border-radius: 50px;
+        width: 711px;
+        height: 750px;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    &_title{
+        font: bold 90px 'Comfortaa', cursive;
+        color: $color-purple-dark;
+        text-align: center;
+        padding-top: 40px;
+        
+    }
+}
