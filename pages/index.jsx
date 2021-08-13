@@ -48,7 +48,7 @@ export default function Home() {
         </Row>
       </main>
       {showLoginPopup && 
-        <LoginPopup />
+        <LoginPopup closePopup={() => setShowLoginPopup(false)} />
       }
     </div>
   )

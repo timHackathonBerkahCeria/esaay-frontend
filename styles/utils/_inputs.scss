@@ -1,0 +1,9 @@
+@import "./variables";
+
+@mixin input{
+    background-color: $color-white;
+    border: solid 1px rgba($color-black, 0.25);
+    border-radius: 50px;
+    font: normal 20px 'Comfortaa', cursive;
+
+}

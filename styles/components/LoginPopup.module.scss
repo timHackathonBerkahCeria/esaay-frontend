@@ -1,4 +1,6 @@
 @import '../utils/variables';
+@import '../utils/buttons';
+@import '../utils/inputs';
 
 .loginPopup{
     &_container{
@@ -17,11 +19,12 @@
     &_content{
         background-color: $color-purple-light;
         border-radius: 50px;
-        width: 711px;
-        height: 750px;
+        width: 35vw;
+        height: 85vh;
         margin: auto;
-        justify-content: center;
         align-items: center;
+        display: flex;
+        flex-direction: column;
 
     }
 
@@ -30,6 +33,48 @@
         color: $color-purple-dark;
         text-align: center;
         padding-top: 40px;
-        
+    }
+
+    &_input{
+        width: 80%;
+        & input{
+            @include input;
+            width: 100%;
+            margin-top: 40px;
+            padding: 15px 0;
+            padding-left: 20px;
+        }
+    }   
+
+    &_btn{
+        @include button-primary;
+        font-size: 30px;
+        margin-top: 40px;
+        width: 50%;
+        padding: 5px 0;
+    }
+
+    &_close{
+        background-color: transparent;
+        border: none;
+        position: absolute;
+        right: 35vw;
+        top: 60px;
+        color: $color-gray;
+    }
+
+    &_prompt{
+        margin-top: 45px;
+        font: normal 20px 'Comfortaa', cursive;
+        color: $color-purple-primary;
+
+        & a{
+            font-weight: bold;
+
+            &:hover{
+                color: $color-purple-primary;
+                text-decoration: underline;
+            }
+        }
     }
 }
