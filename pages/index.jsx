@@ -18,12 +18,12 @@ export default function Home() {
   return (
     <div className={styles.home}>
       <Head>
-        <title>Exaam | Take exams and get quick results.</title>
+        <title>Esaay | Submit essays and get quick results.</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Navbar bg="light" expand="lg" className={styles.navBar}>
-          <Navbar.Brand className={styles.logo}>exaam</Navbar.Brand>
+          <Navbar.Brand className={styles.logo}>esaay</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
@@ -35,7 +35,7 @@ export default function Home() {
       <main>
         <Row>
           <Col className={styles.landingText}>
-            <h1>Welcome to <span>exaam</span></h1>
+            <h1>Welcome to <span>esaay</span></h1>
             <p>Take and correct exams quickly.</p>
             <button onClick={() => setShowLoginPopup(true)}>Get Started</button>
           </Col>
